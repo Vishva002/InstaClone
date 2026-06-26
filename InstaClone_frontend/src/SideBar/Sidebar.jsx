@@ -5,7 +5,7 @@ function Sidebar() {
   return (
     <div
       className="d-flex flex-column justify-content-between p-3 "
-      style={{ width: '250px', height: '100vh' }}
+      style={{ width: '250px', height: '100vh', position: 'fixed' }}
     >
       {/* Top Section */}
       <div className="d-flex flex-column gap-4">

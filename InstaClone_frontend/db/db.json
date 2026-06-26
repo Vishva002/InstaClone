@@ -2,8 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "username": "vishva",
-      "name": "Vishva Natraj",
+      "username": "Sowgar",
+      "name": "Sowgar manivel",
       "profilePic": "https://i.pravatar.cc/150?img=1",
       "postImage": "https://picsum.photos/600/600?random=101",
       "location": "Coimbatore",
@@ -35,8 +35,8 @@
     },
     {
       "id": 2,
-      "username": "john_doe",
-      "name": "John Doe",
+      "username": "vishva",
+      "name": "Vishva Natraj",
       "profilePic": "https://i.pravatar.cc/150?img=2",
       "postImage": "https://picsum.photos/600/600?random=102",
       "location": "Bangalore",
@@ -68,7 +68,7 @@
     },
     {
       "id": 3,
-      "username": "emma",
+      "username": "DD",
       "name": "Emma Watson",
       "profilePic": "https://i.pravatar.cc/150?img=3",
       "postImage": "https://picsum.photos/600/600?random=103",
@@ -98,6 +98,64 @@
           "comment": "Amazing scenery ❤️"
         }
       ]
+    }
+  ],
+  "suggestions": [
+    {
+      "id": 1,
+      "username": "jennifer",
+      "name": "Jennifer Lopez",
+      "profilePic": "https://i.pravatar.cc/150?img=11",
+      "followedBy": "Followed by emma + 8 more"
+    },
+    {
+      "id": 2,
+      "username": "alex_07",
+      "name": "Alex Martin",
+      "profilePic": "https://i.pravatar.cc/150?img=12",
+      "followedBy": "Suggested for you"
+    },
+    {
+      "id": 3,
+      "username": "john_doe",
+      "name": "John Doe",
+      "profilePic": "https://i.pravatar.cc/150?img=13",
+      "followedBy": "Followed by vishva"
+    },
+    {
+      "id": 4,
+      "username": "sophia",
+      "name": "Sophia Williams",
+      "profilePic": "https://i.pravatar.cc/150?img=14",
+      "followedBy": "Followed by alex + 5 more"
+    },
+    {
+      "id": 5,
+      "username": "robert",
+      "name": "Robert James",
+      "profilePic": "https://i.pravatar.cc/150?img=15",
+      "followedBy": "Suggested for you"
+    },
+    {
+      "id": 6,
+      "username": "olivia",
+      "name": "Olivia Brown",
+      "profilePic": "https://i.pravatar.cc/150?img=16",
+      "followedBy": "New to Instagram"
+    },
+    {
+      "id": 7,
+      "username": "daniel",
+      "name": "Daniel Smith",
+      "profilePic": "https://i.pravatar.cc/150?img=17",
+      "followedBy": "Followed by john_doe"
+    },
+    {
+      "id": 8,
+      "username": "mia",
+      "name": "Mia Johnson",
+      "profilePic": "https://i.pravatar.cc/150?img=18",
+      "followedBy": "Suggested for you"
     }
   ]
 }

@@ -29,3 +29,112 @@
 .story {
   height:100px;
 }
+.user-profile{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 100px;
+}
+.profile-pic{
+  
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.userfont{
+  font-size: 16px;
+  font-weight: bold;
+}
+.postimage{
+  width: 400px;
+  height: auto;
+  margin-bottom: 10px;
+}
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.post-card {
+    width: 500px;
+    
+    border-radius: 8px;
+    background: white;
+    padding: 15px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.post-user {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 12px;
+}
+
+.username {
+    font-weight: 600;
+    margin: 0;
+}
+
+.location {
+    color: gray;
+}
+
+.post-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.left-icons {
+    display: flex;
+    gap: 18px;
+}
+
+.post-icons i {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.likes {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.caption,
+.comment {
+    margin-bottom: 6px;
+}
+
+.view-comments {
+    color: gray;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.time {
+    color: gray;
+    font-size: 12px;
+}
