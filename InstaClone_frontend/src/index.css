@@ -24,5 +24,8 @@
 }
 
 .menu-item:hover {
-  background-color: #f2f2f2;
+  background-color: #383737;
+}
+.story {
+  height:100px;
 }
