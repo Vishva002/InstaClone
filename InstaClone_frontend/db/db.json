@@ -152,10 +152,16 @@
     },
     {
       "id": 8,
-      "username": "mia",
+      "username": "velu",
       "name": "Mia Johnson",
       "profilePic": "https://i.pravatar.cc/150?img=18",
       "followedBy": "Suggested for you"
     }
-  ]
+  ],
+    "profiles":{
+      "id": 2,
+      "username": "vishva",
+      "name": "Vishva Natraj",
+      "profilePic": "https://i.pravatar.cc/150?img=2"
+    }
 }

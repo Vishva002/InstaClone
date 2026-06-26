@@ -1,140 +1,190 @@
-.w-20{
-    width: 20%;
+/* Width Utilities */
+.w-20 {
+  width: 20%;
 }
-.w-30{
-    width: 30%;
+
+.w-30 {
+  width: 30%;
 }
+
+/* Sidebar */
 .sidebar {
   width: 250px;
   height: 100vh;
-  border-right: 1px solid #dbdbdb;
   padding: 20px;
+  border-right: 1px solid #dbdbdb;
+  position: sticky;
+  top: 0;
+  background: #fff;
 }
 
 .instagram-logo {
   width: 120px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
   font-size: 18px;
-  cursor: pointer;
   padding: 10px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .menu-item:hover {
-  background-color: #383737;
+  background: #f2f2f2;
 }
+
+/* Stories */
 .story {
-  height:100px;
+  height: 100px;
 }
-.user-profile{
+
+/* User Profile */
+.user-profile {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  height: 100px;
 }
-.profile-pic{
-  
-  width: 38px;
-  height: 38px;
+
+.userfont {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
-  margin-right: 10px;
+  object-fit: cover;
+  margin-right: 12px;
+  flex-shrink: 0;
 }
-.userfont{
-  font-size: 16px;
-  font-weight: bold;
-}
-.postimage{
-  width: 400px;
-  height: auto;
-  margin-bottom: 10px;
-}
+
+/* Posts */
 .post-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-    margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
 }
 
 .post-card {
-    width: 500px;
-    
-    border-radius: 8px;
-    background: white;
-    padding: 15px;
+  width: 500px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
 }
 
 .post-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .post-user {
-    display: flex;
-    align-items: center;
-}
-
-.profile-pic {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 12px;
-}
-
-.username {
-    font-weight: 600;
-    margin: 0;
-}
-
-.location {
-    color: gray;
+  display: flex;
+  align-items: center;
 }
 
 .post-image {
-    width: 100%;
-    border-radius: 5px;
+  width: 100%;
+  border-radius: 6px;
 }
 
 .post-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
 }
 
 .left-icons {
-    display: flex;
-    gap: 18px;
+  display: flex;
+  gap: 18px;
 }
 
 .post-icons i {
-    font-size: 24px;
-    cursor: pointer;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .likes {
-    font-weight: 600;
-    margin-top: 10px;
+  margin-top: 10px;
+  font-weight: 600;
 }
 
 .caption,
 .comment {
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 }
 
 .view-comments {
-    color: gray;
-    cursor: pointer;
-    margin-bottom: 10px;
+  color: #737373;
+  cursor: pointer;
 }
 
 .time {
-    color: gray;
-    font-size: 12px;
+  color: #737373;
+  font-size: 12px;
+}
+
+/* Suggestions */
+.suggestion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.suggestion-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.suggestion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestion-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.followed-by {
+  color: #737373;
+  font-size: 12px;
+}
+
+.follow-btn {
+  color: #0095f6;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0;
+}
+
+.follow-btn:hover {
+  color: #00376b;
+}
+
+/* Optional */
+.location {
+  color: #737373;
+  font-size: 12px;
 }

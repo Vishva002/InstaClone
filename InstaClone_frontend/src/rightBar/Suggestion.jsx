@@ -10,7 +10,34 @@ function Suggestion() {
         .catch((err) => console.log(err));
   }, []);
   return (
-    <div>Suggestion</div>
+<div>
+  <p><b>Suggestions for you</b></p>
+
+  <div className="suggestion-container">
+    {suggestions.map((suggestion) => (
+      <div key={suggestion.id} className="suggestion-card">
+        <div className="suggestion-header">
+          <div className="suggestion-user-info">
+            <img
+              src={suggestion.profilePic}
+              alt={suggestion.username}
+              className="profile-pic"
+            />
+
+            <div>
+              <h6 className="username">{suggestion.username}</h6>
+              <small className="followed-by">
+                {suggestion.followedBy}
+              </small>
+            </div>
+          </div>
+
+          <p className="follow-btn">Follow</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
   )
 }
 
