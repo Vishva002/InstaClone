@@ -1,0 +1,103 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "vishva",
+      "name": "Vishva Natraj",
+      "profilePic": "https://i.pravatar.cc/150?img=1",
+      "postImage": "https://picsum.photos/600/600?random=101",
+      "location": "Coimbatore",
+      "caption": "Learning React one component at a time 🚀",
+      "likes": 1245,
+      "liked": false,
+      "saved": false,
+      "time": "2h",
+      "comments": [
+        {
+          "id": 1,
+          "username": "john_doe",
+          "profilePic": "https://i.pravatar.cc/150?img=2",
+          "comment": "Great work! 🔥"
+        },
+        {
+          "id": 2,
+          "username": "emma",
+          "profilePic": "https://i.pravatar.cc/150?img=3",
+          "comment": "Keep going 👏"
+        },
+        {
+          "id": 3,
+          "username": "alex",
+          "profilePic": "https://i.pravatar.cc/150?img=4",
+          "comment": "Looks awesome ❤️"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "john_doe",
+      "name": "John Doe",
+      "profilePic": "https://i.pravatar.cc/150?img=2",
+      "postImage": "https://picsum.photos/600/600?random=102",
+      "location": "Bangalore",
+      "caption": "Morning coffee and coding ☕💻",
+      "likes": 892,
+      "liked": true,
+      "saved": true,
+      "time": "5h",
+      "comments": [
+        {
+          "id": 1,
+          "username": "vishva",
+          "profilePic": "https://i.pravatar.cc/150?img=1",
+          "comment": "Coffee + Coding = Perfect ❤️"
+        },
+        {
+          "id": 2,
+          "username": "sophia",
+          "profilePic": "https://i.pravatar.cc/150?img=5",
+          "comment": "Nice setup 😍"
+        },
+        {
+          "id": 3,
+          "username": "emma",
+          "profilePic": "https://i.pravatar.cc/150?img=3",
+          "comment": "Love this picture!"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "username": "emma",
+      "name": "Emma Watson",
+      "profilePic": "https://i.pravatar.cc/150?img=3",
+      "postImage": "https://picsum.photos/600/600?random=103",
+      "location": "Ooty",
+      "caption": "Nature is the best therapy 🌿",
+      "likes": 3210,
+      "liked": false,
+      "saved": false,
+      "time": "8h",
+      "comments": [
+        {
+          "id": 1,
+          "username": "alex",
+          "profilePic": "https://i.pravatar.cc/150?img=4",
+          "comment": "Beautiful place 😍"
+        },
+        {
+          "id": 2,
+          "username": "john_doe",
+          "profilePic": "https://i.pravatar.cc/150?img=2",
+          "comment": "I want to visit here someday."
+        },
+        {
+          "id": 3,
+          "username": "vishva",
+          "profilePic": "https://i.pravatar.cc/150?img=1",
+          "comment": "Amazing scenery ❤️"
+        }
+      ]
+    }
+  ]
+}
