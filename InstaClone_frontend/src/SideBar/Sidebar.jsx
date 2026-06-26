@@ -14,8 +14,7 @@ function Sidebar() {
           src={instagramText}
           alt="Instagram Text"
           style={{ width: '120px' }}
-        />
-
+        />  
         <div className="d-flex align-items-center gap-3">
           <i className="bi bi-house-door fs-4"></i>
           <span>Home</span>
