@@ -1,0 +1,415 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "vishva",
+      "name": "Vishva Natraj",
+      "email": "vishva@example.com",
+      "password": "password",
+      "profilePic": "https://i.pravatar.cc/150?img=2",
+      "bio": "Coding enthusiast | React Developer 💻✨",
+      "website": "vishvanatraj.dev"
+    },
+    {
+      "id": "2",
+      "username": "sowgar",
+      "name": "Sowgar Manivel",
+      "email": "sowgar@example.com",
+      "password": "password",
+      "profilePic": "https://i.pravatar.cc/150?img=1",
+      "bio": "Learning React one component at a time 🚀",
+      "website": "sowgar.io"
+    },
+    {
+      "id": "3",
+      "username": "emma",
+      "name": "Emma Watson",
+      "email": "emma@example.com",
+      "password": "password",
+      "profilePic": "https://i.pravatar.cc/150?img=3",
+      "bio": "Nature is the best therapy 🌿",
+      "website": "emmawatson.com"
+    },
+    {
+      "id": "4",
+      "username": "jennifer",
+      "name": "Jennifer Lopez",
+      "email": "jennifer@example.com",
+      "password": "password",
+      "profilePic": "https://i.pravatar.cc/150?img=11",
+      "bio": "Artist & Actor 🎬",
+      "website": "jlo.com"
+    },
+    {
+      "id": "5",
+      "username": "alex_07",
+      "name": "Alex Martin",
+      "email": "alex@example.com",
+      "password": "password",
+      "profilePic": "https://i.pravatar.cc/150?img=12",
+      "bio": "Photography is my passion 📸",
+      "website": "alexmartin.photos"
+    }
+  ],
+  "posts": [
+    {
+      "id": "101",
+      "userId": "2",
+      "username": "sowgar",
+      "profilePic": "https://i.pravatar.cc/150?img=1",
+      "postImage": "https://picsum.photos/600/600?random=101",
+      "location": "Coimbatore",
+      "caption": "Learning React one component at a time 🚀",
+      "time": "2026-06-27T08:00:00.000Z"
+    },
+    {
+      "id": "102",
+      "userId": "1",
+      "username": "vishva",
+      "profilePic": "https://i.pravatar.cc/150?img=2",
+      "postImage": "https://picsum.photos/600/600?random=102",
+      "location": "Bangalore",
+      "caption": "Morning coffee and coding ☕💻",
+      "time": "2026-06-27T06:00:00.000Z"
+    },
+    {
+      "id": "103",
+      "userId": "3",
+      "username": "emma",
+      "profilePic": "https://i.pravatar.cc/150?img=3",
+      "postImage": "https://picsum.photos/600/600?random=103",
+      "location": "Ooty",
+      "caption": "Nature is the best therapy 🌿",
+      "time": "2026-06-27T03:00:00.000Z"
+    },
+    {
+      "id": "104",
+      "userId": "4",
+      "username": "jennifer",
+      "profilePic": "https://i.pravatar.cc/150?img=11",
+      "postImage": "https://picsum.photos/600/600?random=301",
+      "location": "Yosemite",
+      "caption": "Breathtaking views 🏔️",
+      "time": "2026-06-26T21:00:00.000Z"
+    }
+  ],
+  "stories": [
+    {
+      "id": "1",
+      "userId": "2",
+      "username": "sowgar",
+      "profilePic": "https://i.pravatar.cc/150?img=1",
+      "storyImg": "https://picsum.photos/1080/1920?random=21",
+      "viewed": false,
+      "time": "2026-06-27T10:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "userId": "3",
+      "username": "emma",
+      "profilePic": "https://i.pravatar.cc/150?img=3",
+      "storyImg": "https://picsum.photos/1080/1920?random=22",
+      "viewed": false,
+      "time": "2026-06-27T09:45:00.000Z"
+    },
+    {
+      "id": "3",
+      "userId": "4",
+      "username": "jennifer",
+      "profilePic": "https://i.pravatar.cc/150?img=11",
+      "storyImg": "https://picsum.photos/1080/1920?random=23",
+      "viewed": false,
+      "time": "2026-06-27T09:30:00.000Z"
+    },
+    {
+      "id": "4",
+      "userId": "5",
+      "username": "alex_07",
+      "profilePic": "https://i.pravatar.cc/150?img=12",
+      "storyImg": "https://picsum.photos/1080/1920?random=24",
+      "viewed": false,
+      "time": "2026-06-27T09:00:00.000Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": "101",
+      "userId": "1",
+      "username": "vishva",
+      "profilePic": "https://i.pravatar.cc/150?img=2",
+      "comment": "Great work! 🔥",
+      "time": "2026-06-27T08:05:00.000Z"
+    },
+    {
+      "id": "2",
+      "postId": "101",
+      "userId": "3",
+      "username": "emma",
+      "profilePic": "https://i.pravatar.cc/150?img=3",
+      "comment": "Keep going 👏",
+      "time": "2026-06-27T08:10:00.000Z"
+    },
+    {
+      "id": "3",
+      "postId": "102",
+      "userId": "2",
+      "username": "sowgar",
+      "profilePic": "https://i.pravatar.cc/150?img=1",
+      "comment": "Coffee + Coding = Perfect ❤️",
+      "time": "2026-06-27T06:15:00.000Z"
+    },
+    {
+      "id": "4",
+      "postId": "102",
+      "userId": "3",
+      "username": "emma",
+      "profilePic": "https://i.pravatar.cc/150?img=3",
+      "comment": "Love this picture!",
+      "time": "2026-06-27T06:30:00.000Z"
+    },
+    {
+      "postId": "101",
+      "userId": "1",
+      "username": "vishva",
+      "profilePic": "https://i.pravatar.cc/150?img=2",
+      "comment": "dfa",
+      "time": "2026-06-27T06:13:12.530Z",
+      "id": "Hus0MRE4hWo"
+    }
+  ],
+  "likes": [
+    {
+      "id": "1",
+      "postId": "101",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "postId": "102",
+      "userId": "3"
+    },
+    {
+      "id": "3",
+      "postId": "103",
+      "userId": "1"
+    },
+    {
+      "postId": "reel_3",
+      "userId": "1",
+      "id": "NKedaOoOGL0"
+    }
+  ],
+  "saved": [
+    {
+      "id": "1",
+      "postId": "102",
+      "userId": "1"
+    },
+    {
+      "id": "2",
+      "postId": "103",
+      "userId": "1"
+    }
+  ],
+  "followers": [
+    {
+      "id": "1",
+      "followerId": "1",
+      "followingId": "2"
+    },
+    {
+      "id": "2",
+      "followerId": "2",
+      "followingId": "1"
+    },
+    {
+      "id": "3",
+      "followerId": "3",
+      "followingId": "1"
+    },
+    {
+      "followerId": "1",
+      "followingId": "2",
+      "id": "VUZE5KKRUX4"
+    },
+    {
+      "followerId": "1",
+      "followingId": "3",
+      "id": "qiqUwIICROM"
+    },
+    {
+      "followerId": "1",
+      "followingId": "3",
+      "id": "o_kITk9TWJE"
+    },
+    {
+      "followerId": "1",
+      "followingId": "3",
+      "id": "vjuwBDhOcX8"
+    },
+    {
+      "followerId": "1",
+      "followingId": "3",
+      "id": "-BCS9NqycDc"
+    },
+    {
+      "followerId": "1",
+      "followingId": "3",
+      "id": "j5AxVZ61BYk"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "1",
+      "senderId": "2",
+      "senderUsername": "sowgar",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=1",
+      "receiverId": "1",
+      "type": "like",
+      "postId": "102",
+      "detail": "liked your photo.",
+      "read": false,
+      "time": "2026-06-27T06:15:00.000Z"
+    },
+    {
+      "id": "2",
+      "senderId": "3",
+      "senderUsername": "emma",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=3",
+      "receiverId": "1",
+      "type": "follow",
+      "postId": "",
+      "detail": "started following you.",
+      "read": false,
+      "time": "2026-06-27T05:30:00.000Z"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "5",
+      "type": "like",
+      "postId": "",
+      "detail": "liked your reel.",
+      "read": false,
+      "time": "2026-06-27T06:11:52.771Z",
+      "id": "UflUU8XIcM0"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "2",
+      "type": "comment",
+      "postId": "101",
+      "detail": "commented: \"dfa...\"",
+      "read": false,
+      "time": "2026-06-27T06:13:12.548Z",
+      "id": "bG7IfrvGnZc"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "2",
+      "type": "follow",
+      "postId": "",
+      "detail": "started following you.",
+      "read": false,
+      "time": "2026-06-27T06:13:37.569Z",
+      "id": "vbQS33hy3AE"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "3",
+      "type": "follow",
+      "postId": "",
+      "detail": "started following you.",
+      "read": false,
+      "time": "2026-06-27T06:14:05.200Z",
+      "id": "Q_HRF5SjLkA"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "3",
+      "type": "follow",
+      "postId": "",
+      "detail": "started following you.",
+      "read": false,
+      "time": "2026-06-27T06:14:06.765Z",
+      "id": "Hd17Pp0oBV4"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "3",
+      "type": "follow",
+      "postId": "",
+      "detail": "started following you.",
+      "read": false,
+      "time": "2026-06-27T06:14:07.750Z",
+      "id": "TmaFHY3-TkA"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "3",
+      "type": "follow",
+      "postId": "",
+      "detail": "started following you.",
+      "read": false,
+      "time": "2026-06-27T06:14:08.469Z",
+      "id": "B13lbQFsP5o"
+    },
+    {
+      "senderId": "1",
+      "senderUsername": "vishva",
+      "senderProfilePic": "https://i.pravatar.cc/150?img=2",
+      "receiverId": "3",
+      "type": "follow",
+      "postId": "",
+      "detail": "started following you.",
+      "read": false,
+      "time": "2026-06-27T06:14:09.246Z",
+      "id": "Di8j3Z_L2_g"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "senderId": "2",
+      "receiverId": "1",
+      "text": "Hey there! Are you working on the React project?",
+      "time": "2026-06-27T07:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "senderId": "1",
+      "receiverId": "2",
+      "text": "Yes! Refactoring it to look exactly like original Instagram.",
+      "time": "2026-06-27T07:02:00.000Z"
+    },
+    {
+      "id": "3",
+      "senderId": "2",
+      "receiverId": "1",
+      "text": "Oh nice! Can you use Tailwind CSS?",
+      "time": "2026-06-27T07:03:00.000Z"
+    },
+    {
+      "id": "4",
+      "senderId": "1",
+      "receiverId": "2",
+      "text": "Done! It looks absolutely clean.",
+      "time": "2026-06-27T07:05:00.000Z"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

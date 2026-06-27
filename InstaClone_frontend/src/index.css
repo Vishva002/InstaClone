@@ -1,28 +1,134 @@
-.w-20{
-    width: 20%;
-}
-.w-30{
-    width: 30%;
-}
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  border-right: 1px solid #dbdbdb;
-  padding: 20px;
+@import "tailwindcss";
+
+/* Theme Variables */
+:root {
+  --ig-bg-primary: #fafafa;
+  --ig-bg-secondary: #ffffff;
+  --ig-border: #dbdbdb;
+  --ig-text: #262626;
+  --ig-text-muted: #737373;
+  --ig-hover: rgba(0, 0, 0, 0.05);
+  --ig-card-bg: #ffffff;
+  --ig-input-bg: #fafafa;
+  --ig-accent: #0095f6;
+  --ig-accent-hover: #1877f2;
 }
 
-.instagram-logo {
-  width: 120px;
-  margin-bottom: 20px;
+.dark {
+  --ig-bg-primary: #000000;
+  --ig-bg-secondary: #000000;
+  --ig-border: #262626;
+  --ig-text: #f5f5f5;
+  --ig-text-muted: #a8a8a8;
+  --ig-hover: rgba(255, 255, 255, 0.1);
+  --ig-card-bg: #121212;
+  --ig-input-bg: #1c1c1e;
+  --ig-accent: #0095f6;
+  --ig-accent-hover: #1877f2;
 }
 
-.menu-item {
-  font-size: 18px;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 8px;
+/* Base overrides */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--ig-bg-primary);
+  color: var(--ig-text);
+  margin: 0;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.menu-item:hover {
-  background-color: #f2f2f2;
+/* Theme Utilities */
+.bg-ig-primary { background-color: var(--ig-bg-primary); }
+.bg-ig-secondary { background-color: var(--ig-bg-secondary); }
+.bg-ig-card { background-color: var(--ig-card-bg); }
+.bg-ig-input { background-color: var(--ig-input-bg); }
+.border-ig-border { border-color: var(--ig-border); }
+.text-ig-text { color: var(--ig-text); }
+.text-ig-muted { color: var(--ig-text-muted); }
+.hover-ig-bg:hover { background-color: var(--ig-hover); }
+
+/* Custom Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Double click Heart Pop Animation */
+@keyframes heart-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  15% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.9;
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+}
+
+.animate-heart-pulse {
+  animation: heart-pulse 0.8s ease-in-out forwards;
+}
+
+@keyframes heart-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+.animate-heart-pop {
+  animation: heart-pop 0.3s ease-in-out;
+}
+
+/* Toast SlideIn Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal Fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Custom styles for Bootstrap overriding */
+.card {
+  background-color: var(--ig-card-bg);
+  border-color: var(--ig-border);
+  color: var(--ig-text);
+}
+.list-group-item {
+  background-color: var(--ig-card-bg);
+  border-color: var(--ig-border);
+  color: var(--ig-text);
+}
+input, textarea {
+  color: var(--ig-text);
+}
+input::placeholder, textarea::placeholder {
+  color: var(--ig-text-muted);
+}
+
