@@ -1,40 +1,37 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 function UserProfile() {
-  const [profile, setProfile] = useState(null);
+  const { currentUser } = useAuth();
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    fetch("http://localhost:3000/profiles")
-      .then((res) => res.json())
-      .then((data) => setProfile(data))
-      .catch((err) => console.log(err));
-  }, []);
-
-  if (!profile) {
-    return <p>Loading...</p>;
-  }
+  if (!currentUser) return null;
 
   return (
-    <div className="suggestion-container">
-      <div className="suggestion-card">
-        <div className="suggestion-header">
-          <div className="suggestion-user-info">
+    <div className="w-full py-2">
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-3.5">
+          <Link to="/profile" className="block shrink-0">
             <img
-              src={profile.profilePic}
-              alt={profile.username}
-              className="profile-pic"
+              src={currentUser.profilePic || "https://i.pravatar.cc/150"}
+              alt={currentUser.username}
+              className="w-11 h-11 rounded-full object-cover border border-ig-border"
             />
-
-            <div>
-              <h6 className="username">{profile.username}</h6>
-              <small className="followed-by">
-                {profile.name}
-              </small>
-            </div>
+          </Link>
+          <div className="text-left">
+            <Link to="/profile" className="font-semibold text-sm text-ig-text mb-0.5 no-underline hover:underline block leading-tight">
+              {currentUser.username}
+            </Link>
+            <small className="text-xs text-ig-muted block leading-tight mt-0.5">{currentUser.name}</small>
           </div>
-
-          <p className="follow-btn">Switch</p>
         </div>
+        <button 
+          className="text-xs font-bold text-sky-500 hover:text-sky-700 cursor-pointer bg-transparent border-0" 
+          onClick={() => navigate('/settings')}
+        >
+          Settings
+        </button>
       </div>
     </div>
   );

@@ -1,190 +1,134 @@
-/* Width Utilities */
-.w-20 {
-  width: 20%;
+@import "tailwindcss";
+
+/* Theme Variables */
+:root {
+  --ig-bg-primary: #fafafa;
+  --ig-bg-secondary: #ffffff;
+  --ig-border: #dbdbdb;
+  --ig-text: #262626;
+  --ig-text-muted: #737373;
+  --ig-hover: rgba(0, 0, 0, 0.05);
+  --ig-card-bg: #ffffff;
+  --ig-input-bg: #fafafa;
+  --ig-accent: #0095f6;
+  --ig-accent-hover: #1877f2;
 }
 
-.w-30 {
-  width: 30%;
+.dark {
+  --ig-bg-primary: #000000;
+  --ig-bg-secondary: #000000;
+  --ig-border: #262626;
+  --ig-text: #f5f5f5;
+  --ig-text-muted: #a8a8a8;
+  --ig-hover: rgba(255, 255, 255, 0.1);
+  --ig-card-bg: #121212;
+  --ig-input-bg: #1c1c1e;
+  --ig-accent: #0095f6;
+  --ig-accent-hover: #1877f2;
 }
 
-/* Sidebar */
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  padding: 20px;
-  border-right: 1px solid #dbdbdb;
-  position: sticky;
-  top: 0;
-  background: #fff;
-}
-
-.instagram-logo {
-  width: 120px;
-  margin-bottom: 25px;
-}
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-
-.menu-item:hover {
-  background: #f2f2f2;
-}
-
-/* Stories */
-.story {
-  height: 100px;
-}
-
-/* User Profile */
-.user-profile {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.userfont {
-  font-size: 14px;
-  font-weight: 600;
-}
-
-/* Profile Picture */
-.profile-pic {
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-right: 12px;
-  flex-shrink: 0;
-}
-
-/* Posts */
-.post-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  margin-top: 20px;
-}
-
-.post-card {
-  width: 500px;
-  background: #fff;
-  border-radius: 8px;
-  padding: 15px;
-}
-
-.post-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.post-user {
-  display: flex;
-  align-items: center;
-}
-
-.post-image {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.post-icons {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 12px;
-}
-
-.left-icons {
-  display: flex;
-  gap: 18px;
-}
-
-.post-icons i {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.likes {
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-.caption,
-.comment {
-  margin-bottom: 6px;
-}
-
-.view-comments {
-  color: #737373;
-  cursor: pointer;
-}
-
-.time {
-  color: #737373;
-  font-size: 12px;
-}
-
-/* Suggestions */
-.suggestion-container {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 15px;
-}
-
-.suggestion-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.suggestion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.suggestion-user-info {
-  display: flex;
-  align-items: center;
-}
-
-.username {
+/* Base overrides */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--ig-bg-primary);
+  color: var(--ig-text);
   margin: 0;
-  font-size: 14px;
-  font-weight: 600;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.followed-by {
-  color: #737373;
-  font-size: 12px;
+/* Theme Utilities */
+.bg-ig-primary { background-color: var(--ig-bg-primary); }
+.bg-ig-secondary { background-color: var(--ig-bg-secondary); }
+.bg-ig-card { background-color: var(--ig-card-bg); }
+.bg-ig-input { background-color: var(--ig-input-bg); }
+.border-ig-border { border-color: var(--ig-border); }
+.text-ig-text { color: var(--ig-text); }
+.text-ig-muted { color: var(--ig-text-muted); }
+.hover-ig-bg:hover { background-color: var(--ig-hover); }
+
+/* Custom Utilities */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
-.follow-btn {
-  color: #0095f6;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  margin: 0;
+/* Double click Heart Pop Animation */
+@keyframes heart-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+  15% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.9;
+  }
+  30% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
 }
 
-.follow-btn:hover {
-  color: #00376b;
+.animate-heart-pulse {
+  animation: heart-pulse 0.8s ease-in-out forwards;
 }
 
-/* Optional */
-.location {
-  color: #737373;
-  font-size: 12px;
+@keyframes heart-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
 }
+
+.animate-heart-pop {
+  animation: heart-pop 0.3s ease-in-out;
+}
+
+/* Toast SlideIn Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Modal Fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fade-in {
+  animation: fadeIn 0.2s ease-out forwards;
+}
+
+/* Custom styles for Bootstrap overriding */
+.card {
+  background-color: var(--ig-card-bg);
+  border-color: var(--ig-border);
+  color: var(--ig-text);
+}
+.list-group-item {
+  background-color: var(--ig-card-bg);
+  border-color: var(--ig-border);
+  color: var(--ig-text);
+}
+input, textarea {
+  color: var(--ig-text);
+}
+input::placeholder, textarea::placeholder {
+  color: var(--ig-text-muted);
+}
+
